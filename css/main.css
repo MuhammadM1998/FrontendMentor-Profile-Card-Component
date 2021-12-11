@@ -1,0 +1,169 @@
+/*** Media ***
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+/*** General Styles ***/
+@charset "UTF-8";
+
+:root {
+	--dark-cyan: hsl(185, 75%, 39%);
+	--very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--dark-grayish-blue: hsl(227, 10%, 46%);
+	--dark-gray: hsl(0, 0%, 59%);
+	--line: hsl(0, 0%, 95%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: grid;
+	place-content: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+.attribution {
+	color: var(--white-main-heading);
+	font-size: 11px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.attribution a {
+	color: var(--soft-violet);
+}
+
+/*** Page Styles ***/
+body {
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 18px;
+	background-color: var(--dark-cyan);
+	position: relative;
+	overflow: hidden;
+}
+
+body::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../images/bg-pattern-top.svg);
+	background-size: cover;
+	width: 978px;
+	height: 978px;
+	transform: translate(-30%, -60%);
+	z-index: -1;
+}
+
+body::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-image: url(../images/bg-pattern-bottom.svg);
+	background-size: cover;
+	width: 978px;
+	height: 978px;
+	transform: translate(30%, 60%);
+	z-index: -1;
+}
+
+main {
+	width: 90%;
+	margin: auto;
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 15px;
+	margin: auto;
+
+	margin-top: 20px;
+}
+
+.card .image {
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.card .image .cover-image {
+	width: 100%;
+	display: block;
+	border-radius: 15px 15px 0 0;
+}
+
+.card .image .user-image {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 5px solid #fff;
+	border-radius: 50%;
+}
+
+.card .content {
+	display: flex;
+	flex-direction: column;
+}
+
+.card .container {
+	padding: 20px 45px 20px;
+}
+
+.card .details .name-age {
+	display: flex;
+	justify-content: center;
+}
+
+.card .name-age .name {
+	font-size: 1em;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
+	color: var(--very-dark-desaturated-blue);
+}
+
+.card .name-age .age {
+	color: var(--dark-gray);
+}
+
+.card .country h2 {
+	text-align: center;
+	font-size: 0.8em;
+	font-weight: 400;
+	color: var(--dark-gray);
+}
+
+.card hr {
+	border: none;
+	height: 1px;
+	background-color: var(--line);
+}
+
+.card .stats .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card .stat {
+	text-align: center;
+}
+
+.card .stat .amount {
+	font-size: 1em;
+	margin-bottom: 0.1em;
+	color: var(--very-dark-desaturated-blue);
+}
+
+.card .stat .unit {
+	font-size: 0.7em;
+	letter-spacing: 1px;
+	color: var(--dark-gray);
+}
