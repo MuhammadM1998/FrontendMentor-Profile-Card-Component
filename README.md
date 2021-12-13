@@ -34,8 +34,8 @@ Mobile
 
 ### Links
 
--   [Solution URL](https://github.com/MuhammadM1998/Profile-Card-Component)
--   [Live Site URL](https://muhammadm1998.github.io/Profile-Card-Component/)
+-   [Solution URL](https://github.com/MuhammadM1998/FrontendMentor-Profile-Card-Component)
+-   [Live Site URL](https://muhammadm1998.github.io/FrontendMentor-Profile-Card-Component/)
 
 ## My process
 
